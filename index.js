@@ -9,4 +9,4 @@ app.get('/check',(req,res)=>{
     res.send(process.env.TOKEN)
 })
 
-app.listen(2000,()=>{console.log(`listen port ${port}`)})
+module.exports = app
