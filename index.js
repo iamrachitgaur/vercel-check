@@ -2,10 +2,10 @@ const express  = require('express');
 const app = express();
 const port = 2000 || process.env.PORT
 
-app.use('/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send('hello world!!')
 })
-app.use('/check',(req,res)=>{
+app.get('/check',(req,res)=>{
     res.send(process.env.TOKEN)
 })
 
